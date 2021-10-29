@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class numSorting_2751 {
+public class ha_2751 {
 	
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		// TODO Auto-generated method stub
@@ -17,14 +17,14 @@ public class numSorting_2751 {
 		
 		int N = Integer.parseInt(br.readLine());
 		
-		// list °è¿­ Áß ÇÏ³ª¸¦ ¾²¸é µÈ´Ù.
+		// list ï¿½è¿­ ï¿½ï¿½ ï¿½Ï³ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½È´ï¿½.
 		ArrayList<Integer> list = new ArrayList<>();
 		
 		for(int i = 0; i < N; i++) {
 			list.add(Integer.parseInt(br.readLine()));
 		}
 		
-		// arrays.sort()º¸´ÙCollections.sort()°¡ ºü¸§
+		// arrays.sort()ï¿½ï¿½ï¿½ï¿½Collections.sort()ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		Collections.sort(list);
 		
 		for(int value : list) {

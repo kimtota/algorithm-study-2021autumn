@@ -13,7 +13,7 @@ public class numSorting_2750 { //Main
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		
 		BufferedReader br  = new BufferedReader(new InputStreamReader(System.in));
-		int N = Integer.parseInt(br.readLine()); // ÃÑ ¼ıÀÚ°³¼ö ÀÔ·Â (array¿¡ ¸î°³ ³ÖÀ» °ÍÀÎÁö)
+		int N = Integer.parseInt(br.readLine()); // ì´ ìˆ«ìê°œìˆ˜ ì…ë ¥ (arrayì— ëª‡ê°œ ë„£ì„ ê²ƒì¸ì§€)
 		array = new int[N];
 		
 		for(int i = 0; i < N; i++) {
@@ -21,7 +21,7 @@ public class numSorting_2750 { //Main
 			array[i] = Integer.parseInt(st.nextToken());
 		}
 		
-		// ¹è¿­Á¤·ÄÇÏ±â
+		// ë°°ì—´ì •ë ¬í•˜ê¸°
 		Arrays.sort(array);
 		for(int i=0; i<N; i++)
 			System.out.println(array[i]);

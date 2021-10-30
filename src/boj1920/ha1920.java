@@ -13,25 +13,25 @@ public class numFind_1920 {  // Main
 	public static void main(String[] args) throws NumberFormatException, IOException {
 	
 		BufferedReader br  = new BufferedReader(new InputStreamReader(System.in));
-		int N = Integer.parseInt(br.readLine()); // ÃÑ ¼ıÀÚ°³¼ö ÀÔ·Â (array¿¡ ¸î°³ ³ÖÀ» °ÍÀÎÁö)
+		int N = Integer.parseInt(br.readLine()); // ì´ ìˆ«ìê°œìˆ˜ ì…ë ¥ (arrayì— ëª‡ê°œ ë„£ì„ ê²ƒì¸ì§€)
 		array = new int[N];
 		
-		StringTokenizer st = new StringTokenizer(br.readLine(), " "); // ¶ç¾î¾²±â ±âÁØÀ¸·Î ¼ıÀÚ±¸ºĞ
+		StringTokenizer st = new StringTokenizer(br.readLine(), " "); // ë„ì–´ì“°ê¸° ê¸°ì¤€ìœ¼ë¡œ ìˆ«ìêµ¬ë¶„
 		for(int i = 0; i < N; i++) {
 			array[i] = Integer.parseInt(st.nextToken());
 		}
 		
-		// ¹è¿­Á¤·ÄÇÏ±â
+		// ë°°ì—´ì •ë ¬í•˜ê¸°
 		Arrays.sort(array);
 		
-		// ³»°¡ Ã£¾Æ¾ß µÉ È½¼ö ÀÔ·Â¹Ş±â, ¹öÆÛ¾µ¶§ °ø½Ä°°ÀÌ ¿Ü¿ì±â
+		// ë‚´ê°€ ì°¾ì•„ì•¼ ë  íšŸìˆ˜ ì…ë ¥ë°›ê¸°, ë²„í¼ì“¸ë•Œ ê³µì‹ê°™ì´ ì™¸ìš°ê¸°
 		int M = Integer.parseInt(br.readLine());
 		st = new StringTokenizer(br.readLine(), " ");
 		
-		// StringBuilderÀÇ append() : ¹®ÀÚ¿­´õÇÏ±â, ºó¹øÇÏ°Ô ±ä ¹®ÀÚ¿­µéÀ» ´õÇÒ¶§ ÁÖ·Î »ç¿ë
+		// StringBuilderì˜ append() : ë¬¸ìì—´ë”í•˜ê¸°, ë¹ˆë²ˆí•˜ê²Œ ê¸´ ë¬¸ìì—´ë“¤ì„ ë”í• ë•Œ ì£¼ë¡œ ì‚¬ìš©
 		StringBuilder sb = new StringBuilder();
 		for(int i = 0; i < M; i++) {
-			// Ã£°íÀÚ ÇÏ´Â °ªÀÌ ÀÖÀ» °æ¿ì 1, ¾øÀ» °æ¿ì 0À» Ãâ·ÂÇØ¾ßÇÑ´Ù.
+			// ì°¾ê³ ì í•˜ëŠ” ê°’ì´ ìˆì„ ê²½ìš° 1, ì—†ì„ ê²½ìš° 0ì„ ì¶œë ¥í•´ì•¼í•œë‹¤.
 			if(binarySearch(Integer.parseInt(st.nextToken())) >= 0) {
 				sb.append(1).append('\n');
 			}
@@ -45,35 +45,35 @@ public class numFind_1920 {  // Main
 	
 	
 	/**
-	 * @param key Ã£À¸·Á´Â °ª
-	 * @return key¿Í ÀÏÄ¡ÇÏ´Â ¹è¿­ÀÇ ÀÎµ¦½º
+	 * @param key ì°¾ìœ¼ë ¤ëŠ” ê°’
+	 * @return keyì™€ ì¼ì¹˜í•˜ëŠ” ë°°ì—´ì˜ ì¸ë±ìŠ¤
 	 */
 	
 	public static int binarySearch(int key) {
  
-		int left = 0;					// Å½»ö ¹üÀ§ÀÇ ¿ŞÂÊ ³¡ ÀÎµ¦½º
-		int right = array.length - 1;	// Å½»ö ¹üÀ§ÀÇ ¿À¸¥ÂÊ ³¡ ÀÎµ¦½º
+		int left = 0;					// íƒìƒ‰ ë²”ìœ„ì˜ ì™¼ìª½ ë ì¸ë±ìŠ¤
+		int right = array.length - 1;	// íƒìƒ‰ ë²”ìœ„ì˜ ì˜¤ë¥¸ìª½ ë ì¸ë±ìŠ¤
  
-		// left°¡ rightº¸´Ù Ä¿Áö±â Àü±îÁö ¹İº¹ÇÑ´Ù.
+		// leftê°€ rightë³´ë‹¤ ì»¤ì§€ê¸° ì „ê¹Œì§€ ë°˜ë³µí•œë‹¤.
 		while(left <= right) {
  
-			int mid = (left + right) / 2;	// Áß°£À§Ä¡¸¦ ±¸ÇÑ´Ù.
+			int mid = (left + right) / 2;	// ì¤‘ê°„ìœ„ì¹˜ë¥¼ êµ¬í•œë‹¤.
  
-			// key°ªÀÌ Áß°£ À§Ä¡ÀÇ °ªº¸´Ù ÀÛÀ» °æ¿ì
+			// keyê°’ì´ ì¤‘ê°„ ìœ„ì¹˜ì˜ ê°’ë³´ë‹¤ ì‘ì„ ê²½ìš°
 			if(key < array[mid]) {
 				right = mid - 1;
 			}
-			// key°ªÀÌ Áß°£ À§Ä¡ÀÇ °ªº¸´Ù Å¬ °æ¿ì
+			// keyê°’ì´ ì¤‘ê°„ ìœ„ì¹˜ì˜ ê°’ë³´ë‹¤ í´ ê²½ìš°
 			else if(key > array[mid]) {
 				left = mid + 1;
 			}
-			// key°ª°ú Áß°£ À§Ä¡ÀÇ °ªÀÌ °°À» °æ¿ì
+			// keyê°’ê³¼ ì¤‘ê°„ ìœ„ì¹˜ì˜ ê°’ì´ ê°™ì„ ê²½ìš°
 			else {
 				return mid;
 			}
 		}
  
-		// Ã£°íÀÚ ÇÏ´Â °ªÀÌ Á¸ÀçÇÏÁö ¾ÊÀ» °æ¿ì
+		// ì°¾ê³ ì í•˜ëŠ” ê°’ì´ ì¡´ì¬í•˜ì§€ ì•Šì„ ê²½ìš°
 		return -1;
 
 	}

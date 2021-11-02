@@ -1,4 +1,4 @@
-package BOJ;
+package boj1920;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class numFind_1920 {  // Main
+public class ha1920 {  // Main
 
 	public static int[] array; 
 	

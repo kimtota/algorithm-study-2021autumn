@@ -1,4 +1,4 @@
-package BOJ;
+package boj2750;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class numSorting_2750 { //Main
+public class ha2750 { //Main
 
 	public static int[] array; 
 	

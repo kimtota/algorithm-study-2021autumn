@@ -17,7 +17,6 @@ public class ha10815 {
 		arr = new int[N];
 		
 		StringTokenizer st = new StringTokenizer(br.readLine(), " ");
-		
 		for(int i = 0; i < N; i++){
 			arr[i] = Integer.parseInt(st.nextToken());
 		}

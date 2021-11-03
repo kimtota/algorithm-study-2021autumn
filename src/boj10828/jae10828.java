@@ -17,9 +17,7 @@ public class jae10828 {
 		
 		
 		StringTokenizer st;
-		
 		int N = Integer.parseInt(br.readLine());
- 
 		stack = new int[N];
 		
 		while (N-- > 0) {

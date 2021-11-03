@@ -28,5 +28,7 @@ public class jae100815 {
 		}
 		System.out.println(sb);
 	}
-	public static int stoi(String str) {return Integer.parseInt(str);}
+	public static int stoi(String str) {
+		return Integer.parseInt(str);
+	}
 }

@@ -9,13 +9,17 @@ public class sein2750 {
 
         int N = sc.nextInt();
         int[] arr = new int[N];
+
         for(int i = 0; i < N; i++) {
             arr[i] = sc.nextInt();
         }
 
         Arrays.sort(arr);
-        for(int i = 0; i < N; i++) {
-            System.out.println(arr[i]);
+
+        for(int i : arr) {
+            System.out.println(i);
         }
     }
 }
+
+// Arrays.sort + Scanner 방식 (중간 성능)

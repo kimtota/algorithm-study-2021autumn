@@ -9,4 +9,4 @@ public class sein10815 {
     public static void main(String[] args) throws IOException {
 
     }
-}
+}gi

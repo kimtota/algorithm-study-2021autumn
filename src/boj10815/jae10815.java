@@ -2,14 +2,15 @@ package boj10815;
 
 import java.io.*;
 
-public class jae100815 {
+public class jae10815 {
+	
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringBuilder sb = new StringBuilder();
-		// 1. boolean[20_000_001]을 선언한다.
+		// 1. boolean[20_000_001]�쓣 �꽑�뼵�븳�떎.
 		boolean[] arr = new boolean[20_000_001];	
 		
-		// 2. 상근이가 가지고있는 카드의 입력을 받아서, arr[카드의 값] = true로 만들어준다.
+		// 2. �긽洹쇱씠媛� 媛�吏�怨좎엳�뒗 移대뱶�쓽 �엯�젰�쓣 諛쏆븘�꽌, arr[移대뱶�쓽 媛�] = true濡� 留뚮뱾�뼱以��떎.
 		int n = stoi(br.readLine());
 		String[] input = br.readLine().split(" ");
 		for(int i = 0; i < n; i++) {
@@ -17,7 +18,7 @@ public class jae100815 {
 			arr[val] = true;
 		}
 		
-		// 3. 구분해야 할 카드의 입력을 받아서, arr[카드의 값] == true이면 1을, 아니면 0을 출력한다.
+		// 3. 援щ텇�빐�빞 �븷 移대뱶�쓽 �엯�젰�쓣 諛쏆븘�꽌, arr[移대뱶�쓽 媛�] == true�씠硫� 1�쓣, �븘�땲硫� 0�쓣 異쒕젰�븳�떎.
 		int m = stoi(br.readLine());
 		input = br.readLine().split(" ");		
 		for(int i = 0; i < m; i++) {

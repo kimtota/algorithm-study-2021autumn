@@ -7,6 +7,8 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.StringTokenizer;
 
+// 덱 사용해보기
+
 public class ha10866 {
 
 	public static Deque<Integer> deque = new ArrayDeque<>();
@@ -59,7 +61,7 @@ public class ha10866 {
 			}
  
 		}
-		
+
 		System.out.print(sb);
 	}
 	
@@ -97,7 +99,5 @@ public class ha10866 {
 		}
 		return deque.getLast();
 	}
-	
-	
 	
 }

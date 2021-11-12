@@ -3,10 +3,7 @@ package boj10815;
 import java.io.*;
 
 public class jae10815 {
-<<<<<<< HEAD
-	
-=======
->>>>>>> 8c78ac580be81b67038cd2af278b2f8fe83a1850
+
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringBuilder sb = new StringBuilder();

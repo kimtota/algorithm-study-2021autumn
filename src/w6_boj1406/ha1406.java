@@ -73,23 +73,6 @@ public class ha1406 {
 }
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 //		StringTokenizer st = new StringTokenizer(br.readLine(), " ");
 //		
 //		//M개의 줄에 걸쳐 입력할 명령어가 순서대로 주어진다

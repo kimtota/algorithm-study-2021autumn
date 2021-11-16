@@ -14,7 +14,6 @@ public class sein10828 {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringBuilder sb = new StringBuilder();
-
         StringTokenizer st;
 
         int N = Integer.parseInt(br.readLine());

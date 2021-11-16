@@ -1,46 +1,44 @@
-package boj10828;
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.io.IOException;
-import java.util.StringTokenizer;
- 
-public class jae10828 {
+package w3_boj10828;
+
+import java.util.Scanner;
+
+public class ha10828 {
  
 	public static int[] stack;
 	public static int size = 0;
  
  
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) {
  
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		Scanner in = new Scanner(System.in);
 		StringBuilder sb = new StringBuilder();
 		
-		
-		StringTokenizer st;
-		int N = Integer.parseInt(br.readLine());
+		int N = in.nextInt();
+ 
 		stack = new int[N];
 		
-		while (N-- > 0) {
-			st = new StringTokenizer(br.readLine(), " ");
+		for(int i = 0; i < N; i++) {
+        
+			String str = in.next();
  
-			switch (st.nextToken()) {
-			
+			switch (str) {
+            
 			case "push":
-				push(Integer.parseInt(st.nextToken()));
+				push(in.nextInt());
 				break;
-				
+                
 			case "pop":
 				sb.append(pop()).append('\n');
 				break;
-				
+                
 			case "size":
 				sb.append(size()).append('\n');
 				break;
-				
+                
 			case "empty":
 				sb.append(empty()).append('\n');
 				break;
-				
+                
 			case "top":
 				sb.append(top()).append('\n');
 				break;
@@ -54,7 +52,7 @@ public class jae10828 {
 		stack[size] = item;
 		size++;
 	}
-	
+    
 	public static int pop() {
 		if(size == 0) {
 			return -1;
@@ -66,11 +64,11 @@ public class jae10828 {
 			return res;
 		}
 	}
-	
+    
 	public static int size() {
 		return size;
 	}
-	
+    
 	public static int empty() {
 		if(size == 0) {
 			return 1;
@@ -79,7 +77,7 @@ public class jae10828 {
 			return 0;
 		}
 	}
-	
+    
 	public static int top() {
 		if(size == 0) {
 			return -1;

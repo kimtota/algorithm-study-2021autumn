@@ -1,4 +1,4 @@
-package boj1920;
+package w1_boj1920;
 
 import java.util.Scanner;
 import java.util.Arrays;

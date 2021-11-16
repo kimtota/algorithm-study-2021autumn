@@ -1,4 +1,4 @@
-package boj10845;
+package w4_boj10845;
 
 import java.util.*;
 import java.io.*;

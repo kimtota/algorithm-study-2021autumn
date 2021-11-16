@@ -1,4 +1,4 @@
-package boj10845;
+package w4_boj10845;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -9,7 +9,7 @@ import java.util.StringTokenizer;
 
 public class ha10845 {
 
-	public static Queue<Integer> queue = new LinkedList<>(); // intÇü queue ¼±¾ð, linkedlist ÀÌ¿ë
+	public static Queue<Integer> queue = new LinkedList<>(); // intï¿½ï¿½ queue ï¿½ï¿½ï¿½ï¿½, linkedlist ï¿½Ì¿ï¿½
 	
 	public static void main(String[] args) throws NumberFormatException, IOException {
 

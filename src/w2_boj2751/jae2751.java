@@ -1,4 +1,4 @@
-package boj2751;
+package w2_boj2751;
 
 import java.io.InputStreamReader;
 import java.io.BufferedReader;

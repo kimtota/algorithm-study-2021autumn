@@ -1,4 +1,4 @@
-package boj10866;
+package w4_boj10866;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,7 +7,7 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.StringTokenizer;
 
-// µ¦ »ç¿ëÇØº¸±â
+// ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Øºï¿½ï¿½ï¿½
 
 public class ha10866 {
 

@@ -1,4 +1,4 @@
-package boj10866;
+package w4_boj10866;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -19,7 +19,7 @@ public class jae10866 {
  
 			String[] s = br.readLine().split(" ");
  
-			// Ã¹ ¹øÂ° ´Ü¾î¿¡ ´ëÇÑ switch-case 
+			// Ã¹ ï¿½ï¿½Â° ï¿½Ü¾î¿¡ ï¿½ï¿½ï¿½ï¿½ switch-case 
 			switch (s[0]) {
  
 				case "push_front": {

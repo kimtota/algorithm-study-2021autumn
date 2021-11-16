@@ -1,4 +1,4 @@
-package boj2750;
+package w1_boj2750;
 
 import java.io.BufferedReader;
 import java.io.IOException;

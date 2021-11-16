@@ -1,4 +1,4 @@
-package boj10815;
+package w3_boj10815;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

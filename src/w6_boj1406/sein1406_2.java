@@ -77,6 +77,6 @@ public class sein1406_2 {
 //            }
 //
 //        }
-        System.out.print(str);
+       // System.out.print(str);
     }
 }

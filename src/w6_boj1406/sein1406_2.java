@@ -22,7 +22,7 @@ public class sein1406_2 {
 //
 //        int nowStrLength = str.length();
 //
-//        cursor[nowStrLength] = 1; // 문자열의 맨끝에 커서가 있음
+//        cursor[nowStrLength] = 1; // 臾몄옄�뿴�쓽 留⑤걹�뿉 而ㅼ꽌媛� �엳�쓬
 //        int cursorNowIdx = nowStrLength;
 //
 //        for (int i = 0; i < M; i++) {
@@ -77,6 +77,6 @@ public class sein1406_2 {
 //            }
 //
 //        }
-        System.out.print(str);
+       // System.out.print(str);
     }
 }
